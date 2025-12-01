@@ -1,0 +1,61 @@
+{
+  "metrics": {
+    "task_created": [
+      {
+        "timestamp": "2025-12-01T19:10:02.090249",
+        "data": {
+          "category": "general"
+        }
+      }
+    ],
+    "chat_interaction": [
+      {
+        "timestamp": "2025-12-01T19:10:02.092637",
+        "data": {
+          "intent": "create_task"
+        }
+      },
+      {
+        "timestamp": "2025-12-01T19:10:02.751969",
+        "data": {
+          "intent": "diary_entry"
+        }
+      },
+      {
+        "timestamp": "2025-12-01T19:10:03.343445",
+        "data": {
+          "intent": "ask_advice"
+        }
+      },
+      {
+        "timestamp": "2025-12-01T19:10:03.780027",
+        "data": {
+          "intent": "ask_advice"
+        }
+      },
+      {
+        "timestamp": "2025-12-01T19:10:04.566529",
+        "data": {
+          "intent": "ask_advice"
+        }
+      }
+    ],
+    "diary_entry_added": [
+      {
+        "timestamp": "2025-12-01T19:10:02.750527",
+        "data": {
+          "mood": 3
+        }
+      }
+    ]
+  },
+  "statistics": {
+    "uptime_hours": 0.0007648333333333334,
+    "total_events": 7,
+    "event_types": {
+      "task_created": 1,
+      "chat_interaction": 5,
+      "diary_entry_added": 1
+    }
+  }
+}

@@ -1,0 +1,457 @@
+2025-11-30 00:05:20,163 - __main__ - INFO - Memory system initialized
+2025-11-30 00:05:20,163 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:05:20,163 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:05:20,163 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:05:20,163 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:05:20,163 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:05:20,163 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:05:20,164 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:05:20,212 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:05:20,212 - __main__ - INFO - Agent initialized with session 1fa63a70
+2025-11-30 00:05:20,213 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:05:20,213 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,213 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:05:20,214 - __main__ - INFO - Task created: acf80297
+2025-11-30 00:05:20,215 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:05:20,215 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,215 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:05:20,216 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,218 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:05:20,218 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,218 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,220 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:05:20,220 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,220 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,221 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:05:20,221 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:05:20,221 - __main__ - ERROR - LLM generation error: Models.generate_content() got an unexpected keyword argument 'generation_config'
+2025-11-30 00:09:00,379 - __main__ - INFO - Memory system initialized
+2025-11-30 00:09:00,380 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:09:00,380 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:09:00,380 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:09:00,380 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:09:00,380 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:09:00,380 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:09:00,380 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:09:00,427 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:09:00,427 - __main__ - INFO - Agent initialized with session 4b7f0db3
+2025-11-30 00:09:00,427 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:09:00,431 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:00,880 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:00,882 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:00,882 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:09:00,887 - __main__ - INFO - Task created: 6d9c41d1
+2025-11-30 00:09:00,890 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:09:00,890 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:00,975 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:00,978 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:00,978 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:09:00,979 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:01,135 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:01,136 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:01,142 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:09:01,142 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:01,227 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:01,229 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:01,230 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:01,402 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:01,403 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:01,406 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:09:01,406 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:01,489 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:01,491 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:01,493 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:01,646 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:01,648 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:01,651 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:09:01,651 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:01,737 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:01,739 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:09:01,740 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:09:01,926 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:09:01,928 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:15,616 - __main__ - INFO - Memory system initialized
+2025-11-30 00:12:15,617 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:12:15,617 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:12:15,617 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:12:15,617 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:12:15,617 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:12:15,617 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:12:15,617 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:12:15,661 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:12:15,661 - __main__ - INFO - Agent initialized with session 2c0e5bb0
+2025-11-30 00:12:15,661 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:12:15,664 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:15,802 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:15,802 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:15,802 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:12:15,806 - __main__ - INFO - Task created: e8a8344d
+2025-11-30 00:12:15,809 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:12:15,809 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:16,098 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:16,101 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:16,101 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:12:16,103 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:16,198 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:16,199 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:16,204 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:12:16,205 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:16,489 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:16,490 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:16,492 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:16,590 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:16,592 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:16,596 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:12:16,596 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:16,955 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:16,956 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:16,958 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:17,042 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:17,044 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:17,047 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:12:17,047 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:17,503 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:17,505 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:12:17,507 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:12:17,591 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:12:17,592 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:13,742 - __main__ - INFO - Memory system initialized
+2025-11-30 00:14:13,742 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:14:13,742 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:14:13,742 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:14:13,742 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:14:13,742 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:14:13,742 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:14:13,743 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:14:13,787 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:14:13,787 - __main__ - INFO - Agent initialized with session 1601bba3
+2025-11-30 00:14:13,787 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:14:13,791 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:13,971 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:13,972 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:13,972 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:14:13,976 - __main__ - INFO - Task created: b867e8bc
+2025-11-30 00:14:13,979 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:14:13,979 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:14,272 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:14,274 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:14,274 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:14:14,276 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:14,389 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:14,391 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:14,398 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:14:14,398 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:14,661 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:14,663 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:14,664 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:14,787 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:14,789 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:14,793 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:14:14,794 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:15,052 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:15,054 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:15,056 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:15,197 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:15,199 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:15,203 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:14:15,203 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:15,448 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:15,450 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:14:15,451 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:14:15,583 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:14:15,585 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:26,452 - __main__ - INFO - Memory system initialized
+2025-11-30 00:20:26,453 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:20:26,453 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:20:26,453 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:20:26,453 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:20:26,453 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:20:26,454 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:20:26,454 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:20:26,499 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:20:26,499 - __main__ - INFO - Agent initialized with session 9b76c112
+2025-11-30 00:20:26,499 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:20:26,503 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:27,184 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:27,187 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:27,187 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:20:27,192 - __main__ - INFO - Task created: c98708b9
+2025-11-30 00:20:27,195 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:20:27,195 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:27,281 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:27,286 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:27,286 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:20:27,287 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:27,667 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:27,669 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:27,675 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:20:27,675 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:27,760 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:27,762 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:27,763 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:28,102 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:28,104 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:28,108 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:20:28,109 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:28,263 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:28,264 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:28,266 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:28,579 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:28,581 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:28,584 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:20:28,584 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:28,717 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:28,719 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:20:28,720 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:20:28,969 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:20:28,972 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:32,425 - __main__ - INFO - Memory system initialized
+2025-11-30 00:28:32,425 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:28:32,425 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:28:32,425 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:28:32,425 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:28:32,425 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:28:32,425 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:28:32,425 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:28:32,468 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:28:32,468 - __main__ - INFO - Agent initialized with session 180450c1
+2025-11-30 00:28:32,468 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:28:32,472 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:32,615 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:32,616 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:32,616 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:28:32,619 - __main__ - INFO - Task created: ce0bdfa3
+2025-11-30 00:28:32,620 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:28:32,620 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:32,965 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:32,968 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:32,969 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:28:32,970 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:33,143 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:33,144 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:33,150 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:28:33,150 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:33,359 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:33,360 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:33,362 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:33,538 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:33,540 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:33,543 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:28:33,543 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:33,748 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:33,751 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:33,752 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:33,928 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:33,930 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:33,933 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:28:33,933 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:34,195 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:34,199 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:28:34,200 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:28:34,317 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:28:34,318 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:34:22,905 - __main__ - INFO - Memory system initialized
+2025-11-30 00:34:22,907 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:34:22,907 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:34:22,907 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:34:22,907 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:34:22,907 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:34:22,907 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:34:22,907 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:34:22,952 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:34:22,953 - __main__ - INFO - Agent initialized with session 1bbec0ba
+2025-11-30 00:34:22,953 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:34:22,956 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:23,081 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:23,082 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2025-11-30 00:34:23,082 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:34:23,084 - __main__ - INFO - Task created: b192d29a
+2025-11-30 00:34:23,085 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:34:23,085 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:23,388 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:23,391 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:34:23,391 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:34:23,393 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:23,482 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:23,483 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:34:23,488 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:34:23,489 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:23,779 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:23,780 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:34:23,783 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:23,892 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:23,894 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:34:23,897 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:34:23,897 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:24,166 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:24,167 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:34:24,169 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:24,288 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:24,291 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:34:24,295 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:34:24,295 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:24,557 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:24,559 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:34:24,561 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:34:24,708 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 00:34:24,710 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API Key not found. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API Key not found. Please pass a valid API key.'}]}}
+2025-11-30 00:37:36,676 - __main__ - INFO - Memory system initialized
+2025-11-30 00:37:36,678 - __main__ - INFO - Tool registered: create_task
+2025-11-30 00:37:36,678 - __main__ - INFO - Tool registered: break_down_task
+2025-11-30 00:37:36,678 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-11-30 00:37:36,678 - __main__ - INFO - Tool registered: analyze_mood
+2025-11-30 00:37:36,678 - __main__ - INFO - Tool registered: generate_insights
+2025-11-30 00:37:36,678 - __main__ - INFO - Tool registered: suggest_next_action
+2025-11-30 00:37:36,678 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-11-30 00:37:36,722 - __main__ - INFO - Gemini client initialized.
+2025-11-30 00:37:36,722 - __main__ - INFO - Agent initialized with session 174fddc4
+2025-11-30 00:37:36,722 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-11-30 00:37:36,726 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:37:38,243 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:37:38,249 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:37:38,253 - __main__ - INFO - Task created: 66c8a3fe
+2025-11-30 00:37:38,255 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-11-30 00:37:38,255 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:37:39,857 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:37:39,861 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 00:37:39,863 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:37:43,639 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:37:43,647 - __main__ - INFO - User input: What are my top priorities?
+2025-11-30 00:37:43,648 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:37:46,964 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:37:46,969 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:37:52,900 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:37:52,906 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-11-30 00:37:52,906 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:38:02,931 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:38:02,950 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:38:12,553 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:38:12,566 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-11-30 00:38:12,567 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:38:13,884 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:38:13,887 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:38:18,291 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:45:34,211 - __main__ - INFO - User input: Help me with the demo
+2025-11-30 00:45:34,233 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:45:36,562 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:45:36,576 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:45:43,934 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:48:08,772 - __main__ - INFO - User input: Help me create priority list to work on my submission tomorrow
+2025-11-30 00:48:08,792 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:48:12,005 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:48:12,013 - __main__ - INFO - Using tool: create_task
+2025-11-30 00:48:12,031 - __main__ - INFO - Task created: 229a9dab
+2025-11-30 00:48:24,081 - __main__ - INFO - User input: It is a project submission
+2025-11-30 00:48:24,084 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:48:30,439 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 00:48:30,445 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 00:48:37,398 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 01:01:58,962 - __main__ - INFO - User input: I have capstone project to submit tmw, and one office task to be completed. since you are my diary can you take note of this and also hehelp me do it
+2025-11-30 01:01:58,988 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 01:02:19,276 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 01:02:19,303 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 01:02:19,310 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 01:02:22,899 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 14:16:45,414 - __main__ - INFO - User input: Add task: Submit the Capstone project video to Kaggle by tonight.
+2025-11-30 14:16:45,481 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 14:16:47,627 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 14:16:47,636 - __main__ - INFO - Using tool: create_task
+2025-11-30 14:16:47,653 - __main__ - INFO - Task created: 12d5a79b
+2025-11-30 14:17:08,770 - __main__ - INFO - User input: "I'm feeling a bit stressed about the deadline. Review my tasks and give me a quick plan to finish everything calmly"
+2025-11-30 14:17:08,774 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 14:17:14,249 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 14:17:14,255 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 14:17:14,258 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 14:17:16,809 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 14:17:47,133 - __main__ - INFO - User input: Help me with how to get it done
+2025-11-30 14:17:47,136 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 14:17:49,143 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 14:17:49,150 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 14:17:56,293 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 14:18:24,337 - __main__ - INFO - User input: I think this will help,thanks my AI Diary
+2025-11-30 14:18:24,355 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 14:18:26,032 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-11-30 14:18:26,041 - __main__ - INFO - Using tool: analyze_mood
+2025-11-30 14:18:26,048 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 14:18:29,409 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:01:34,866 - __main__ - INFO - Memory system initialized
+2025-12-01 19:01:34,879 - __main__ - INFO - Tool registered: create_task
+2025-12-01 19:01:34,895 - __main__ - INFO - Tool registered: break_down_task
+2025-12-01 19:01:34,912 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-12-01 19:01:34,929 - __main__ - INFO - Tool registered: analyze_mood
+2025-12-01 19:01:34,946 - __main__ - INFO - Tool registered: generate_insights
+2025-12-01 19:01:34,962 - __main__ - INFO - Tool registered: suggest_next_action
+2025-12-01 19:01:34,979 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-12-01 19:01:35,040 - __main__ - INFO - Gemini client initialized.
+2025-12-01 19:01:35,063 - __main__ - INFO - Agent initialized with session cc3298bb
+2025-12-01 19:01:35,179 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-12-01 19:01:35,201 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:01:36,961 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:01:36,987 - __main__ - INFO - Using tool: create_task
+2025-12-01 19:01:37,017 - __main__ - INFO - Task created: 78e44044
+2025-12-01 19:01:37,147 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-12-01 19:01:37,163 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:01:39,554 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:01:39,598 - __main__ - INFO - Using tool: analyze_mood
+2025-12-01 19:01:39,616 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:01:42,618 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:01:42,763 - __main__ - INFO - User input: What are my top priorities?
+2025-12-01 19:01:42,780 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:01:46,700 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:01:46,722 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:01:52,011 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:01:52,179 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-12-01 19:01:52,196 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:01:53,809 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:01:53,885 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:02:09,285 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:02:09,535 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-12-01 19:02:09,552 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:02:12,003 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:02:12,097 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:02:22,113 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2025-12-01 19:10:01,770 - __main__ - INFO - Memory system initialized
+2025-12-01 19:10:01,772 - __main__ - INFO - Tool registered: create_task
+2025-12-01 19:10:01,772 - __main__ - INFO - Tool registered: break_down_task
+2025-12-01 19:10:01,772 - __main__ - INFO - Tool registered: prioritize_tasks
+2025-12-01 19:10:01,772 - __main__ - INFO - Tool registered: analyze_mood
+2025-12-01 19:10:01,772 - __main__ - INFO - Tool registered: generate_insights
+2025-12-01 19:10:01,772 - __main__ - INFO - Tool registered: suggest_next_action
+2025-12-01 19:10:01,772 - google_genai._api_client - WARNING - Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2025-12-01 19:10:01,815 - __main__ - INFO - Gemini client initialized.
+2025-12-01 19:10:01,815 - __main__ - INFO - Agent initialized with session 960fe02e
+2025-12-01 19:10:01,816 - __main__ - INFO - User input: Create a task to complete the AI Agents capstone project
+2025-12-01 19:10:01,819 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:02,080 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:02,082 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:02,082 - __main__ - INFO - Using tool: create_task
+2025-12-01 19:10:02,090 - __main__ - INFO - Task created: 3169eb1b
+2025-12-01 19:10:02,092 - __main__ - INFO - User input: I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.
+2025-12-01 19:10:02,093 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:02,609 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:02,611 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:02,611 - __main__ - INFO - Using tool: analyze_mood
+2025-12-01 19:10:02,612 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:02,745 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:02,747 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:02,752 - __main__ - INFO - User input: What are my top priorities?
+2025-12-01 19:10:02,752 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:03,224 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:03,226 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:03,228 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:03,339 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:03,341 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:03,343 - __main__ - INFO - User input: Break down the capstone project into smaller tasks
+2025-12-01 19:10:03,343 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:03,650 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:03,652 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:03,654 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:03,765 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:03,776 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:03,780 - __main__ - INFO - User input: Show me insights about my recent productivity
+2025-12-01 19:10:03,780 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:04,445 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:04,447 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2025-12-01 19:10:04,448 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-12-01 19:10:04,560 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2025-12-01 19:10:04,562 - __main__ - ERROR - LLM generation error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
