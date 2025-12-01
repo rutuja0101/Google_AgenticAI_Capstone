@@ -33,8 +33,7 @@ This table provides a quick overview of each file in the repository and its role
 
 The following diagram illustrates the primary components and their interactions. The User interacts with the `PersonalTaskAgent`, which acts as the central controller, coordinating with the LLM, Memory, and Tools.
 
-> **[Insert High-Level Architecture Diagram Here]**
-> *(Note: A diagram showing the User connected to the PersonalTaskAgent. The Agent is connected bi-directionally to the LLMInterface, ToolRegistry, and MemorySystem (which connects to SQLite). The ProductionAgent wraps the central Agent, and a MetricsCollector observes the whole system.)*
+![Architecture Diagram.png](Architecture%20Diagram.png)
 
 * **User:** The end-user interacting via a command-line interface.
 * **PersonalTaskAgent (Main Controller):** The core logic that receives input, determines intent, and manages the overall conversation flow.
@@ -50,23 +49,11 @@ The following diagram illustrates the primary components and their interactions.
 
 Understanding how a user's request is processed is key to grasping the agent's operation. The data flow follows a "reason-then-act" pattern.
 
-### Request Processing Data Flow Diagram
+### Data Flow Diagram
 
 This diagram shows the step-by-step journey of a user's input from ingestion to response generation.
 
-> **[Insert Data Flow Diagram Here]**
-> *(Note: A sequential diagram illustrating steps: 1. User Input -> 2. Intent Classification (Agent->LLM) -> 3. Tool Selection (Agent->Registry) -> 4. Tool Execution (Agent->Tool->Memory/Calc) -> 5. Response Generation (Agent->LLM) -> 6. Context Update (Agent->Memory) -> 7. Output to User.)*
-
-1.  **Input:** The user provides a natural language query (e.g., "Create a task to finish my report by Friday").
-2.  **Intent Classification:** The `PersonalTaskAgent` sends the input to the `LLMInterface`. The LLM analyzes the text and determines the user's intent (e.g., `create_task`).
-3.  **Tool Selection:** Based on the determined intent, the agent consults the `ToolRegistry` to find the corresponding tool (e.g., `create_task_tool`).
-4.  **Tool Execution:** The selected tool is executed. This may involve:
-    * Extracting parameters from the user's input (using the LLM).
-    * Interacting with the `MemorySystem` to store or retrieve data (e.g., adding a new row to the `tasks` table in SQLite).
-    * Performing a calculation or analysis.
-5.  **Response Generation:** The tool returns a result. The agent then formulates a final, natural language response to the user, often incorporating the tool's output.
-6.  **Context Update:** The entire interaction (user input and agent response) is logged into the `MemorySystem` (both short-term list and long-term `conversations` table) to maintain context for future turns.
-7.  **Output:** The final response is displayed to the user.
+![DFD Capstone.png](DFD%20Capstone.png)
 
 ---
 
