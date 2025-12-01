@@ -130,6 +130,9 @@ ai-agents-capstone/
     ```text
     os.environ["GEMINI_API_KEY"] = "Insert API Key"
     os.environ["GOOGLE_API_KEY"] = "Insert API Key"
+    
+    try:
+    client = genai.Client(api_key="Insert API Key")
     ```
 
 
