@@ -39,7 +39,7 @@ import re
 # Make sure GEMINI_API_KEY is exported in your shell session
 from google import genai
 try:
-    client = genai.Client(api_key="AIzaSyDlTYoWMLLtDHm5AKpv_gBDfEr7eKdy-WU")
+    client = genai.Client(api_key="Insert API Key")
 except Exception as e:
     logger.warning("Could not initialize genai.Client(): %s", e)
     client = None
