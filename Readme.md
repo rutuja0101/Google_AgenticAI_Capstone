@@ -148,6 +148,14 @@ ai-agents-capstone/
     ```
 The agent will perform an initial self-test and demo routine, after which it will enter an interactive chat mode where you can issue natural language commands.
 
+### Study-Coach Commands (New)
+You can now use dedicated study-agent intents for your deadline-driven course plan:
+
+* `Build my study plan for courses before November 30, 2026`
+* `Give me a daily study checklist`
+
+These commands return a weekly roadmap (with intensity index and course mix) and a practical daily execution checklist that includes analytics/stats and Power BI practice blocks.
+
 ---
 
 ## 📊 Observability: Data and Metrics
