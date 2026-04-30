@@ -148,6 +148,63 @@ class DiaryEntry:
 
 # ==================== Memory Management (Day 3) ====================
 
+
+
+@dataclass
+class StudyCourse:
+    """Study course plan model"""
+    name: str
+    target_weeks: int
+    domain: str
+    completed: bool = False
+
+
+class StudyCoach:
+    """Creates study roadmaps and daily plans for course completion goals."""
+
+    def __init__(self):
+        self.deadline = datetime(2026, 11, 30)
+
+    def build_default_plan(self) -> List[StudyCourse]:
+        return [
+            StudyCourse("Supervised Machine Learning: Regression and Classification", 3, "ml_stats"),
+            StudyCourse("Project Management", 8, "execution"),
+            StudyCourse("Python - Complete Python, Django, Data Science and ML Guide", 8, "python"),
+            StudyCourse("Data Science Foundations", 12, "analytics_stats"),
+        ]
+
+    def generate_weekly_plan(self, start_date: Optional[datetime] = None) -> Dict[str, Any]:
+        start = start_date or datetime.now()
+        weeks_left = max(1, (self.deadline - start).days // 7)
+        courses = self.build_default_plan()
+        total_target = sum(c.target_weeks for c in courses)
+        pressure = round(total_target / weeks_left, 2)
+
+        return {
+            "start_date": start.date().isoformat(),
+            "deadline": self.deadline.date().isoformat(),
+            "weeks_left": weeks_left,
+            "intensity_index": pressure,
+            "courses": [asdict(c) for c in courses],
+            "weekly_focus": [
+                "2 ML/stats deep-work blocks",
+                "2 Python implementation blocks",
+                "1 Project management block",
+                "1 Power BI practice block",
+            ],
+        }
+
+    def generate_daily_checklist(self, hours_available: float = 2.5) -> List[str]:
+        return [
+            f"Set today's focus and timebox ({hours_available}h total)",
+            "Complete one primary lesson + notes",
+            "Solve one stats/analytics practice set",
+            "Do one Power BI micro-task (data model, DAX, or dashboard)",
+            "End-of-day review: done/not done + recovery plan",
+        ]
+
+# ==================== Memory Management (Day 3) ====================
+
 class MemorySystem:
     """
     Implements both short-term and long-term memory
@@ -496,6 +553,7 @@ class PersonalTaskAgent:
         self.tools = ToolRegistry()
         self.llm = LLMInterface(llm_provider, api_key)
         self.metrics = MetricsCollector()
+        self.study_coach = StudyCoach()
         self.session_id = hashlib.md5(str(datetime.now()).encode()).hexdigest()[:8]
         logger.info(f"Agent initialized with session {self.session_id}")
         
@@ -506,7 +564,7 @@ class PersonalTaskAgent:
         "{user_input}"
         
         Return a JSON with:
-        - intent: one of [create_task, update_task, diary_entry, get_tasks, get_insights, ask_advice]
+        - intent: one of [create_task, update_task, diary_entry, get_tasks, get_insights, study_plan, daily_study_checklist, ask_advice]
         - entities: extracted information like task title, description, dates, etc.
         
         Example:
@@ -522,6 +580,10 @@ class PersonalTaskAgent:
                 return {"intent": "create_task", "entities": {"title": user_input}}
             elif any(word in user_input.lower() for word in ['diary', 'journal', 'feeling']):
                 return {"intent": "diary_entry", "entities": {"content": user_input}}
+            elif any(word in user_input.lower() for word in ['study plan', 'course plan', 'deadline']):
+                return {"intent": "study_plan", "entities": {}}
+            elif any(word in user_input.lower() for word in ['daily checklist', 'today study', 'study today']):
+                return {"intent": "daily_study_checklist", "entities": {}}
             else:
                 return {"intent": "ask_advice", "entities": {"question": user_input}}
     
@@ -681,6 +743,19 @@ class PersonalTaskAgent:
             else:
                 response = "No pending tasks. Time to add some goals!"
                 
+        elif intent == 'study_plan':
+            plan = self.study_coach.generate_weekly_plan()
+            response = "🎯 Study Plan to 2026-11-30\n"
+            response += f"Weeks left: {plan['weeks_left']} | Intensity index: {plan['intensity_index']}\n"
+            response += "Courses:\n"
+            for c in plan['courses']:
+                response += f"- {c['name']} ({c['target_weeks']} weeks)\n"
+            response += "Weekly focus:\n" + "\n".join(f"- {w}" for w in plan['weekly_focus'])
+
+        elif intent == 'daily_study_checklist':
+            checklist = self.study_coach.generate_daily_checklist()
+            response = "🧠 Daily Study Checklist\n" + "\n".join(f"- {item}" for item in checklist)
+
         elif intent == 'get_insights':
             # Generate insights from recent data
             conn = sqlite3.connect(self.memory.db_path)
@@ -1006,7 +1081,8 @@ def main():
         "I'm feeling overwhelmed with all the work. Had a long day but managed to finish the memory system implementation.",
         "What are my top priorities?",
         "Break down the capstone project into smaller tasks",
-        "Show me insights about my recent productivity"
+        "Show me insights about my recent productivity",
+        "Build my study plan for courses before November 30, 2026"
     ]
     
     print("Running demo interactions:\n")
